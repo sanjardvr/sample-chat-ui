@@ -1,0 +1,68 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header,
+.footer {
+  min-width: 200px;
+  text-align: left;
+}
+
+.header {
+  height: 50px;
+  border: 5px solid red;
+  flex-shrink: 0;
+}
+
+.footer {
+  height: 100px;
+  border: 5px solid green;
+  flex-shrink: 0;
+}
+
+.main {
+  display: flex;
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+
+.chats-container {
+  width: 200px;
+  overflow-y: auto;
+  border: 5px solid orange;
+}
+
+.chat {
+  border: 2px solid rgb(0, 110, 255);
+  height: 50px;
+  margin: 10px 0;
+}
+
+.current-chat-container {
+  flex: 1;
+  overflow-y: auto;
+  border: 5px solid purple;
+  display: flex;
+  flex-direction: column;
+}
+
+.current-chat,
+.current-chat2 {
+  border: 2px solid rgb(92, 5, 73);
+  height: 50px;
+  margin: 10px 0;
+  width: 150px;
+}
+
+.current-chat {
+  align-self: flex-end;
+}
